@@ -3,12 +3,12 @@ require_relative 'lib/stealth/services/postback/version'
 Gem::Specification.new do |spec|
   spec.name          = 'stealth-postback'
   spec.version       = Stealth::Services::Postback::VERSION
-  spec.authors       = ['Léo Figea']
+  spec.authors       = ['Léo Figea', 'Barkibu']
   spec.email         = ['leo@barkibu.com']
 
   spec.summary       = 'Postback driver for Stealth'
   spec.description   = 'Simple Driver to post back to a specified url'
-  spec.homepage      = 'http://github/malkovro/stealth-postback'
+  spec.homepage      = 'http://github/barkibu/stealth-postback'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
