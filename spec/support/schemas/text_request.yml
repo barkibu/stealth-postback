@@ -1,0 +1,15 @@
+---
+type: object
+properties:
+  from: 
+   type: string
+   description: Identifier of the Message Sender
+  to:
+    type: string
+    description: Unique Identifier of the recipient
+  body: 
+    type: string
+    description: Text Content of the message
+required:
+  - to
+  - body

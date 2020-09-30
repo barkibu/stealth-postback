@@ -1,4 +1,3 @@
-# coding: utf-8
 # frozen_string_literal: true
 
 require 'rest-client'
@@ -22,9 +21,9 @@ module Stealth
 
         def transmit
           # Don't transmit anything for delays
-          # Could send something as typing indicator
+          # Could send something as typing indicator
           return true if reply.blank?
-          
+
           send_signed_request
 
           message = "Transmitting. Response: #{reply[:body]}. To: #{reply[:to]}. Type: #{reply[:type]}"

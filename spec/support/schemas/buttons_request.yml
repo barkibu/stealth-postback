@@ -1,0 +1,36 @@
+---
+type: object
+properties:
+  from: 
+   type: string
+   description: Identifier of the Message Sender
+  to:
+    type: string
+    description: Unique Identifier of the recipient
+  type:
+    type: string
+    enum: [button]
+  body: 
+    type: string
+    description: Label of the buttons
+  buttons:
+    type: array
+    items:
+      type: object
+      properties:
+        type: 
+          type: string
+          enum: [payload]
+          description: Type of the button
+        text:
+          type: string
+          description: label of the button
+        payload:
+          type: string
+          description: JSON encoded String with the payload to pass back when button is selected
+ 
+        
+required:
+  - to
+  - body
+  - buttons
